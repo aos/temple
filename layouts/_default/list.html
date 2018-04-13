@@ -14,13 +14,13 @@
         {{ if eq .Type "posts" }}
         <li>
           {{ if .Draft }}
-          DRAFT: 
+          DRAFT:
           {{ end }}
           <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
 
           <p class="footnote">
-          <time datetime="{{ $page.Date.Format "01-02-2006" }}">
-            {{ $page.Date.Format "01-02-2006" }}
+          <time datetime="{{ $page.Date.Format .Site.Params.dateformat }}">
+            {{ $page.Date.Format .Site.Params.dateformat }}
           </time>
           </p>
         </li>
