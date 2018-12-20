@@ -9,6 +9,10 @@ body {
 	color: #484848;
 }
 
+a {
+	text-decoration: none;
+}
+
 .nav-menu {
   margin-top: 5px;
   padding-bottom: 5px;
@@ -75,7 +79,7 @@ body {
 	margin-bottom: 1em;
 }
 
-.posts li a {
+.posts li > a {
 	color:#369;
 	text-decoration:none;
 }
@@ -92,7 +96,7 @@ body {
 }
 
 .footnote a {
-	color: #888 !important
+	color: #888;
 }
 
 .footnote a:hover{
