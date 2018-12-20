@@ -90,13 +90,13 @@ a {
 
 .footnote {
 	font-family: verdana,arial,helvetica,sans-serif;
-	color:#888;
+	color:#575757;
 	font-size:0.75em;
 	margin-bottom:0;
 }
 
 .footnote a {
-	color: #888;
+	color: #575757;
 }
 
 .footnote a:hover{
@@ -119,7 +119,7 @@ a {
 }
 
 .footer-content a {
-	color: #bbb;
+	color: #575757;
 }
 
 .footer-content ul {
