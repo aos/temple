@@ -9,6 +9,10 @@ body {
 	color: #484848;
 }
 
+a {
+	text-decoration: none;
+}
+
 .nav-menu {
   margin-top: 5px;
   padding-bottom: 5px;
@@ -75,7 +79,7 @@ body {
 	margin-bottom: 1em;
 }
 
-.posts li a {
+.posts li > a {
 	color:#369;
 	text-decoration:none;
 }
@@ -86,13 +90,13 @@ body {
 
 .footnote {
 	font-family: verdana,arial,helvetica,sans-serif;
-	color:#888;
+	color:#575757;
 	font-size:0.75em;
 	margin-bottom:0;
 }
 
 .footnote a {
-	color: #888 !important
+	color: #575757;
 }
 
 .footnote a:hover{
@@ -115,7 +119,7 @@ body {
 }
 
 .footer-content a {
-	color: #bbb;
+	color: #575757;
 }
 
 .footer-content ul {
