@@ -1,11 +1,11 @@
 html {
-	min-height:100%;
-	width:100%;
-	position:relative;
+	min-height: 100%;
+	width: 100%;
+	position: relative;
 }
 
 body {
-	background-color: rgb(252,252,252);
+	background-color: rgb(252, 252, 252);
 	color: #484848;
 }
 
@@ -14,14 +14,14 @@ a {
 }
 
 .nav-menu {
-  margin-top: 5px;
-  padding-bottom: 5px;
+	margin-top: 5px;
+	padding-bottom: 5px;
 	border-bottom: 1px solid #e3e3e3;
 }
 
 .pure-menu-heading {
-  text-transform: none;
-  font-size: large;
+	text-transform: none;
+	font-size: large;
 }
 
 .header {
@@ -31,7 +31,7 @@ a {
 }
 
 .header ul li {
-		height: auto;
+	height: auto;
 }
 
 .header ul li a {
@@ -48,8 +48,8 @@ a {
 
 .site-title {
 	color: #484848;
-  text-transform: none;
-  font-weight: normal;
+	text-transform: none;
+	font-weight: normal;
 	font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -66,8 +66,8 @@ a {
 }
 
 .posts {
-	font-family: verdana,arial,helvetica,sans-serif;
-	list-style-type:none;
+	font-family: verdana, arial, helvetica, sans-serif;
+	list-style-type: none;
 	padding-left: 1em;
 }
 
@@ -80,36 +80,36 @@ a {
 }
 
 .posts li > a {
-	color:#369;
-	text-decoration:none;
+	color: #369;
+	text-decoration: none;
 }
 
 .post-list {
-  font-size: large;
+	font-size: large;
 }
 
 .footnote {
-	font-family: verdana,arial,helvetica,sans-serif;
-	color:#575757;
-	font-size:0.75em;
-	margin-bottom:0;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #575757;
+	font-size: 0.75em;
+	margin-bottom: 0;
 }
 
 .footnote a {
 	color: #575757;
 }
 
-.footnote a:hover{
-	text-decoration:underline;
-	color:#369;
+.footnote a:hover {
+	text-decoration: underline;
+	color: #369;
 }
 
 .footer {
-	position:absolute;
-	z-index:2;
-	height:auto;
-	width:100%;
-	bottom:0;
+	position: absolute;
+	z-index: 2;
+	height: auto;
+	width: 100%;
+	bottom: 0;
 }
 
 .footer-content {
@@ -135,7 +135,7 @@ a {
 }
 
 #foot-name {
-  color: #484848;
+	color: #484848;
 	text-transform: none;
 }
 
@@ -146,24 +146,24 @@ a {
 }
 
 .post {
-	font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-	color:#484848;
-	letter-spacing:normal;
+	font-family: proxima-nova, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	color: #484848;
+	letter-spacing: normal;
 	padding-left: .5em;
 }
 
-.post h1,h2,h3,h4,h5,h6 {
+.post h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
-	letter-spacing:normal;
+	letter-spacing: normal;
 }
 
 .post-content {
-	z-index:9;
-	overflow:auto;
-	padding:0;
-	padding-bottom:3em;
-	font-size:16px;
-	line-height:1.4;
+	z-index: 9;
+	overflow: auto;
+	padding: 0;
+	padding-bottom: 3em;
+	font-size: 16px;
+	line-height: 1.4;
 }
 
 .post-content img {
@@ -172,67 +172,69 @@ a {
 }
 
 .post-content code {
-  background-color: #EEE;
+	background-color: #EEE;
 }
 
 .post code {
-  background-color: #EEE;
+	background-color: #EEE;
 }
 
 .post a {
-	color:#c05b4d;
+	color: #c05b4d;
 	text-decoration: none;
 }
 
 .post a:hover {
-	color:#a5473a;
+	color: #a5473a;
 	text-decoration: underline;
 }
 
 .post h1 {
-	font-size:28px;
+	font-size: 28px;
 }
 
 .post h2 {
-	font-size:25px;
+	font-size: 25px;
 }
 
 .post h3 {
-	font-size:23px;
+	font-size: 23px;
 }
 
 .post h4 {
-	font-size:21px;
+	font-size: 21px;
 }
 
 .post h5 {
-	font-size:19px;
+	font-size: 19px;
 }
 
 .post h6 {
-	font-size:18px;
+	font-size: 18px;
 }
 
-.post-title{
-		margin-top: 0;
-		margin-bottom: 2em;
+.post-title {
+	margin-top: 0;
+	margin-bottom: 2em;
 }
 
 .post-title h1 {
-	font-weight:bold;
-	font-size:39px;
+	font-weight: bold;
+	font-size: 39px;
 	line-height: 40px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
 	.desktop {
 		display: none;
 	}
+
 	.mobile {
 		display: block;
 	}
+
 	#toggle-btn {
 		display: inline-block;
 		float: right;
@@ -241,20 +243,23 @@ a {
 		color: #484848;
 		font-weight: bold;
 	}
+
 	#toggle-content li {
 		clear: both;
 		height: auto;
-		background-color: rgb(249,249,249);
+		background-color: rgb(249, 249, 249);
 	}
+
 	#toggle-home {
 		display: inline-block;
 	}
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
 	.mobile {
-		display:none;
+		display: none;
 	}
+
 	.desktop {
 		display: block;
 	}
