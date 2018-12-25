@@ -171,12 +171,8 @@ a {
 	height: auto;
 }
 
-.post-content code {
-	background-color: #EEE;
-}
-
-.post code {
-	background-color: #EEE;
+.post-content pre {
+    padding: 0.5em;
 }
 
 .post a {
