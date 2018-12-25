@@ -46,12 +46,19 @@ $ hugo -t temple
 
 ## Customizing
 Your `config` file will hold all your options:
-```yaml
+```toml
 baseURL = "https://aos.github.io/"
 title = "Your Blog Title"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
 copyright = "(c) 2008 - 2014"
+
+# Enables Chroma-based syntax highlighting with theme "friendly"
+# See https://xyproto.github.io/splash/docs/ for other theme options
+pygmentsStyle = "friendly"
+# If true, Chroma will highlight GitHub-style code fences in addition to
+# highlight shortcodes
+pygmentsCodeFences = true
 
 [params]
   # Enables the topmenu, which pulls from categories
