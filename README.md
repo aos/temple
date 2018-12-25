@@ -22,7 +22,7 @@ A live version of this theme can be found
 ## Features
 The main features of this theme include:
 * Page load speed optimizations (scores 98/100 on PageSpeed)
-* Syntax highlighting with `highlightjs`
+* Syntax highlighting with `chroma`
 * Multiple categories as navigation tabs
 * Tags and categories have their own pages
 * Footer with variable social links and RSS
@@ -54,15 +54,6 @@ theme = "temple"
 copyright = "(c) 2008 - 2014"
 
 [params]
-  # Enables syntax highlighting
-  highlight = true 
-
-  # Supports highlighting for languages not included in the original pack
-  # See https://highlightjs.org/download/ for what's included in original pack
-  # For reference to all languages, see:
-  # https://github.com/isagalaev/highlight.js/tree/master/src/languages
-  hjslangs = ["go", "vim"]
-
   # Enables the topmenu, which pulls from categories
   topmenu = "categories"
 
