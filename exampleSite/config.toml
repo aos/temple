@@ -4,14 +4,14 @@ theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
 copyright = "(c) 2017 - 2018 Aos Dabbagh -- All rights reserved."
 
+# Enables Chroma-based syntax highlighting with theme "friendly"
+# See https://xyproto.github.io/splash/docs/ for other theme options
+pygmentsStyle = "friendly"
+# If true, Chroma will highlight GitHub-style code fences in addition to
+# highlight shortcodes
+pygmentsCodeFences = true
+
 [params]
-  # Enables syntax highlighting
-  highlight = true 
-  # Supports highlighting for languages not included in the original pack
-  # See https://highlightjs.org/download/ for original pack
-  # For reference to all languages, see:
-  # https://github.com/isagalaev/highlight.js/tree/master/src/languages
-  hjslangs = ["go", "vim"]
   # Enables the topmenu, which pulls from categories
   topmenu = "categories"
 

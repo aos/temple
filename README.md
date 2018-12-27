@@ -1,4 +1,4 @@
-# Temple 
+# Temple
 
 A Hugo theme focused on content, cleanliness, speed and responsiveness. The main
 goal of this theme is to be simple and fast.
@@ -6,7 +6,7 @@ goal of this theme is to be simple and fast.
 > This is a fork of [nofancy](https://github.com/gizak/nofancy) with many
 improvements.
 
-A live version of this theme can be found 
+A live version of this theme can be found
 [on my personal blog](https://aos.github.io).
 
 ![Main List](/images/tn.png)
@@ -22,7 +22,8 @@ A live version of this theme can be found
 ## Features
 The main features of this theme include:
 * Page load speed optimizations (scores 98/100 on PageSpeed)
-* Syntax highlighting with `highlightjs`
+* Syntax highlighting with `chroma`
+* No JavaScript
 * Multiple categories as navigation tabs
 * Tags and categories have their own pages
 * Footer with variable social links and RSS
@@ -46,23 +47,21 @@ $ hugo -t temple
 
 ## Customizing
 Your `config` file will hold all your options:
-```yaml
+```toml
 baseURL = "https://aos.github.io/"
 title = "Your Blog Title"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
 copyright = "(c) 2008 - 2014"
 
+# Enables Chroma-based syntax highlighting with theme "friendly"
+# See https://xyproto.github.io/splash/docs/ for other theme options
+pygmentsStyle = "friendly"
+# If true, Chroma will highlight GitHub-style code fences in addition to
+# highlight shortcodes
+pygmentsCodeFences = true
+
 [params]
-  # Enables syntax highlighting
-  highlight = true 
-
-  # Supports highlighting for languages not included in the original pack
-  # See https://highlightjs.org/download/ for what's included in original pack
-  # For reference to all languages, see:
-  # https://github.com/isagalaev/highlight.js/tree/master/src/languages
-  hjslangs = ["go", "vim"]
-
   # Enables the topmenu, which pulls from categories
   topmenu = "categories"
 
@@ -91,7 +90,7 @@ $ hugo new about
 ```
 
 ## Contributing
-Contributions are welcome. 
+Contributions are welcome.
 
 **Features**:  
 If you are adding a feature, fork the repository, create a new branch
