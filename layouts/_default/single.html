@@ -38,7 +38,7 @@
         {{ if or .Params.enable_toc (and (eq .Params.enable_toc nil) .Site.Params.enable_toc) -}}
         {{ .TableOfContents }}
         {{- end }}
-        {{ .Content }}
+        {{ replace .Content "<table>" "<table class='pure-table pure-table-striped'>" | safeHTML }}
       </div>
     </div>
   </div>
