@@ -13,6 +13,10 @@ a {
 	text-decoration: none;
 }
 
+code, kbd, pre, samp {
+    background-color: rgb(240, 240, 240);
+}
+
 .nav-menu {
 	margin-top: 5px;
 	padding-bottom: 5px;
