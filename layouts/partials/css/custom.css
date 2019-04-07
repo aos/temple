@@ -134,6 +134,13 @@ code, kbd, pre, samp {
 	padding-left: 0;
 }
 
+/* https://github.com/gohugoio/hugo/issues/1778#issuecomment-451552602 */
+#TableOfContents > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 #gototop-btn {
 	display: inline-block;
 }

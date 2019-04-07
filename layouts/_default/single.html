@@ -35,7 +35,7 @@
       </div>
 
       <div class="post-content">
-        {{ if or .Params.enable_toc (and (eq .Params.enable_toc nil) .Site.Params.enable_toc) -}}
+        {{ if or .Params.toc (and (eq .Params.toc nil) .Site.Params.toc) -}}
         {{ .TableOfContents }}
         {{- end }}
         {{ replace .Content "<table>" "<table class='pure-table pure-table-striped'>" | safeHTML }}

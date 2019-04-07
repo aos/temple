@@ -28,6 +28,7 @@ The main features of this theme include:
 * Tags and categories have their own pages
 * Footer with variable social links and RSS
 * Google analytics enabled
+* Table of contents
 
 ## Getting Started
 If you have not already created a blog, I recommend you check out my [getting
@@ -69,6 +70,9 @@ pygmentsCodeFences = true
   # For reference to date and time templating, see:
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateformatpretty = "2006-01-02"
+
+  # Enable table of contents, this can be overridden by page level parameter `toc`.
+  toc = true
 
 # Builds a list page for each category given
 [taxonomies]
