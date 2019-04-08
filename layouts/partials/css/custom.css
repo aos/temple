@@ -13,6 +13,10 @@ a {
 	text-decoration: none;
 }
 
+code, kbd, pre, samp {
+    background-color: rgb(240, 240, 240);
+}
+
 .nav-menu {
 	margin-top: 5px;
 	padding-bottom: 5px;
@@ -128,6 +132,13 @@ a {
 	margin-bottom: 0;
 	display: inline-block;
 	padding-left: 0;
+}
+
+/* https://github.com/gohugoio/hugo/issues/1778#issuecomment-451552602 */
+#TableOfContents > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #gototop-btn {
