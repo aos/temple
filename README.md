@@ -11,7 +11,8 @@ A live version of this theme can be found
 
 ![Main List](https://raw.githubusercontent.com/aos/temple/master/images/tn.png)
 ![Content](https://raw.githubusercontent.com/aos/temple/master/images/screenshot.png)
-![Responsive](https://raw.githubusercontent.com/aos/temple/master/images/responsive.png)
+
+[Screenshot of theme responsiveness can be found here.](https://raw.githubusercontent.com/aos/temple/master/images/responsive.png)
 
 ## Table of Contents
 * [Features](#features)
