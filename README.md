@@ -9,8 +9,9 @@ improvements.
 A live version of this theme can be found
 [on my personal blog](https://aos.github.io).
 
-![Main List](/images/tn.png)
-![Content](/images/screenshot.png)
+![Main List](https://raw.githubusercontent.com/aos/temple/master/images/tn.png)
+![Content](https://raw.githubusercontent.com/aos/temple/master/images/screenshot.png)
+![Responsive](https://raw.githubusercontent.com/aos/temple/master/images/responsive.png)
 
 ## Table of Contents
 * [Features](#features)
