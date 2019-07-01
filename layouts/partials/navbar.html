@@ -18,7 +18,7 @@
             </ul>
         </div>
         <div class="mobile pure-menu nav-menu">
-            <a href="/" class="site-title pure-menu-heading" id="toggle-home">{{ .Site.Title }}</a>
+            <a href="{{$baseurl}}" class="site-title pure-menu-heading" id="toggle-home">{{ .Site.Title }}</a>
             <a href="#" id="toggle-btn">&#9776;</a>
             <ul class="pure-menu-list" id="toggle-content" style="display:none;">
                 {{ $baseurl := .Site.BaseURL }}
