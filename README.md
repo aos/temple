@@ -23,19 +23,18 @@ A live version of this theme can be found
 
 ## Features
 The main features of this theme include:
-* Page load speed optimizations (scores 98/100 on PageSpeed)
+* Page load speed optimizations (scores 99/100 on PageSpeed)
 * Syntax highlighting with `chroma`
 * No JavaScript
 * Multiple categories as navigation tabs
 * Tags and categories have their own pages
 * Footer with variable social links and RSS
-* Google analytics enabled
+* Google analytics option
 * Table of contents
 
 ## Getting Started
-If you have not already created a blog, I recommend you check out my [getting
-started guide](https://aos.github.io/2017/11/23/practical-guide-to-setting-up-a-hugo-blog/) for a comprehensive overview. Otherwise, just download it or clone it into
-your `themes/` directory:
+If you have not already created a blog, I recommend you check out my [getting started guide](https://aos.github.io/2017/11/23/practical-guide-to-setting-up-a-hugo-blog/) for a comprehensive overview. Otherwise,
+just download it or clone it into your `themes/` directory:
 ```
 $ cd themes && git clone https://github.com/aos/temple.git
 ```
@@ -85,6 +84,7 @@ pygmentsCodeFences = true
   name = "Aos Dabbagh"
   github = "aos"
   email = "your@email.com"
+  # Note: GA Javascript snippet is not included if "gaid" is left blank
   gaid = "Your Google Analytics ID"
   twitter = "twitterID"
   medium = "mediumUsername"
@@ -113,4 +113,4 @@ have a solution, then submit a new PR with the guidelines posted above in the
 **features** section and link your issue to it using the keyword "[*closes*](https://help.github.com/articles/closing-issues-using-keywords/)".
 
 ## License
-Licensed under the MIT License. See the [LICENSE](LICENSE).
+MIT License. See the [LICENSE](LICENSE).
