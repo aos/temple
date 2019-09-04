@@ -1,3 +1,16 @@
+:root {
+  --color: #484848;
+  --color-footnote: #575757;
+  --color-footer-content: #bbb;
+  --background-color: rgb(252, 252, 252);
+  --background-color-code: rgb(240, 240, 240);
+  --background-color-toggle-content: rgb(249, 249, 249);
+  --link-color: #c05b4d;
+  --link-color-hover: #a5473a;
+  --list-link-color: #369;
+  --border-navbar-and-footer: #e3e3e3;
+}
+
 html {
   min-height: 100%;
   width: 100%;
@@ -5,8 +18,8 @@ html {
 }
 
 body {
-  background-color: rgb(252, 252, 252);
-  color: #484848;
+  background-color: var(--background-color);
+  color: var(--color);
 }
 
 a {
@@ -14,13 +27,13 @@ a {
 }
 
 code, kbd, pre, samp {
-  background-color: rgb(240, 240, 240);
+  background-color: var(--background-color-code);
 }
 
 .nav-menu {
   margin-top: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid var(--border-navbar-and-footer);
 }
 
 .pure-menu-heading {
@@ -30,7 +43,7 @@ code, kbd, pre, samp {
 
 .header {
   text-align: left;
-  color: #484848;
+  color: var(--color);
   margin-bottom: .5em;
 }
 
@@ -40,18 +53,18 @@ code, kbd, pre, samp {
 
 .header ul li a {
   font-weight: bold;
-  color: #484848;
+  color: var(--color);
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .header {
   font-weight: bold;
-  color: #484848;
+  color: var(--color);
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .site-title {
-  color: #484848;
+  color: var(--color);
   text-transform: none;
   font-weight: normal;
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -84,7 +97,7 @@ code, kbd, pre, samp {
 }
 
 .posts li > a {
-  color: #369;
+  color: var(--list-link-color);
   text-decoration: none;
 }
 
@@ -94,18 +107,18 @@ code, kbd, pre, samp {
 
 .footnote {
   font-family: verdana, arial, helvetica, sans-serif;
-  color: #575757;
+  color: var(--color-footnote);
   font-size: 0.75em;
   margin-bottom: 0;
 }
 
 .footnote a {
-  color: #575757;
+  color: var(--color-footnote);
 }
 
 .footnote a:hover {
   text-decoration: underline;
-  color: #369;
+  color: var(--list-link-color);
 }
 
 .footer {
@@ -117,13 +130,13 @@ code, kbd, pre, samp {
 }
 
 .footer-content {
-  border-top: 1px solid #e3e3e3;
+  border-top: 1px solid var(--border-navbar-and-footer);
   font-size: 80%;
-  color: #bbb;
+  color: var(--color-footer-content);
 }
 
 .footer-content a {
-  color: #575757;
+  color: var(--color-footnote);
 }
 
 .footer-content ul {
@@ -146,7 +159,7 @@ code, kbd, pre, samp {
 }
 
 #foot-name {
-  color: #484848;
+  color: var(--color);
   text-transform: none;
 }
 
@@ -158,7 +171,6 @@ code, kbd, pre, samp {
 
 .post {
   font-family: proxima-nova, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  color: #484848;
   letter-spacing: normal;
   padding-left: .5em;
 }
@@ -186,13 +198,15 @@ code, kbd, pre, samp {
   padding: 0.5em;
 }
 
-.post a {
-  color: #c05b4d;
+.post a,
+.post-content a {
+  color: var(--link-color);
   text-decoration: none;
 }
 
-.post a:hover {
-  color: #a5473a;
+.post a:hover,
+.post-content a:hover {
+  color: var(--link-color-hover);
   text-decoration: underline;
 }
 
@@ -247,14 +261,14 @@ code, kbd, pre, samp {
     float: right;
     padding: .5em 1em;
     text-decoration: none;
-    color: #484848;
+    color: var(--color);
     font-weight: bold;
   }
 
   #toggle-content li {
     clear: both;
     height: auto;
-    background-color: rgb(249, 249, 249);
+    background-color: var(--background-color-toggle-content);
   }
 
   #toggle-home {
