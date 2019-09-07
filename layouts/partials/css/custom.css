@@ -190,6 +190,8 @@ code, kbd, pre, samp {
 
 .post {
   font-family: proxima-nova, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: #484848;
+  color: var(--color);
   letter-spacing: normal;
   padding-left: .5em;
 }
