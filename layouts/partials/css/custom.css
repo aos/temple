@@ -73,6 +73,7 @@ code, kbd, pre, samp {
 }
 
 .site-title {
+  color: #484848;
   color: var(--color);
   text-transform: none;
   font-weight: normal;
