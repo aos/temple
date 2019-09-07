@@ -18,7 +18,9 @@ html {
 }
 
 body {
+  background-color: rgb(252, 252, 252);
   background-color: var(--background-color);
+  color: #484848;
   color: var(--color);
 }
 
@@ -27,13 +29,17 @@ a {
 }
 
 code, kbd, pre, samp {
+  background-color: rgb(240, 240, 240);
   background-color: var(--background-color-code);
 }
 
 .nav-menu {
   margin-top: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid var(--border-navbar-and-footer);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e3e3e3;
+  border-bottom-color: var(--border-navbar-and-footer);
 }
 
 .pure-menu-heading {
@@ -43,6 +49,7 @@ code, kbd, pre, samp {
 
 .header {
   text-align: left;
+  color: #484848;
   color: var(--color);
   margin-bottom: .5em;
 }
@@ -53,12 +60,14 @@ code, kbd, pre, samp {
 
 .header ul li a {
   font-weight: bold;
+  color: #484848;
   color: var(--color);
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .header {
   font-weight: bold;
+  color: #484848;
   color: var(--color);
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -97,6 +106,7 @@ code, kbd, pre, samp {
 }
 
 .posts li > a {
+  color: #369;
   color: var(--list-link-color);
   text-decoration: none;
 }
@@ -107,17 +117,20 @@ code, kbd, pre, samp {
 
 .footnote {
   font-family: verdana, arial, helvetica, sans-serif;
+  color: #575757;
   color: var(--color-footnote);
   font-size: 0.75em;
   margin-bottom: 0;
 }
 
 .footnote a {
+  color: #575757;
   color: var(--color-footnote);
 }
 
 .footnote a:hover {
   text-decoration: underline;
+  color: #369;
   color: var(--list-link-color);
 }
 
@@ -130,12 +143,17 @@ code, kbd, pre, samp {
 }
 
 .footer-content {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e3e3e3;
   border-top: 1px solid var(--border-navbar-and-footer);
   font-size: 80%;
+  color: #bbb;
   color: var(--color-footer-content);
 }
 
 .footer-content a {
+  color: #575757;
   color: var(--color-footnote);
 }
 
@@ -159,6 +177,7 @@ code, kbd, pre, samp {
 }
 
 #foot-name {
+  color: #484848;
   color: var(--color);
   text-transform: none;
 }
@@ -199,11 +218,13 @@ code, kbd, pre, samp {
 }
 
 .post a {
+  color: #c05b4d;
   color: var(--link-color);
   text-decoration: none;
 }
 
 .post a:hover {
+  color: #a5473a;
   color: var(--link-color-hover);
   text-decoration: underline;
 }
@@ -259,6 +280,7 @@ code, kbd, pre, samp {
     float: right;
     padding: .5em 1em;
     text-decoration: none;
+    color: #484848;
     color: var(--color);
     font-weight: bold;
   }
@@ -266,6 +288,7 @@ code, kbd, pre, samp {
   #toggle-content li {
     clear: both;
     height: auto;
+    background-color: rgb(249, 249, 249);
     background-color: var(--background-color-toggle-content);
   }
 
