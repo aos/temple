@@ -198,14 +198,12 @@ code, kbd, pre, samp {
   padding: 0.5em;
 }
 
-.post a,
-.post-content a {
+.post a {
   color: var(--link-color);
   text-decoration: none;
 }
 
-.post a:hover,
-.post-content a:hover {
+.post a:hover {
   color: var(--link-color-hover);
   text-decoration: underline;
 }
