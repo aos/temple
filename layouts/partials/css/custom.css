@@ -8,7 +8,7 @@
     --background-color-toggle-content: rgb(249, 249, 249);
     --link-color: #c05b4d;
     --link-color-hover: #a5473a;
-    --list-link-color: #369;
+    --list-link-color: #336699;
     --border-navbar-and-footer: #e3e3e3;
   }
 }
@@ -21,9 +21,9 @@
     --background-color: rgb(5, 5, 5);
     --background-color-code: rgb(30, 30, 30);
     --background-color-toggle-content: rgb(10, 10, 10);
-    --link-color: rgb(0, 210, 238);
-    --link-color-hover: rgb(0, 141, 160);
-    --list-link-color: rgb(72, 134, 197);
+    --link-color: #008da0;
+    --link-color-hover: #2bc1d5;
+    --list-link-color: #2c92c9;
     --border-navbar-and-footer: #e3e3e3;
   }
 }
@@ -45,7 +45,7 @@ a {
   text-decoration: none;
 }
 
-code, kbd, pre, samp {
+kbd, pre, samp {
   background-color: rgb(240, 240, 240);
   background-color: var(--background-color-code);
 }
