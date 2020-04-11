@@ -3,14 +3,11 @@
 A Hugo theme focused on content, cleanliness, speed and responsiveness. The main
 goal of this theme is to be simple and fast.
 
-> This is a fork of [nofancy](https://github.com/gizak/nofancy) with many
-improvements.
-
-A live version of this theme can be found
-[on my personal blog](https://aos.github.io).
+A live version of this theme can be found [on my personal blog](https://aos.github.io).
 
 ![Main List](https://raw.githubusercontent.com/aos/temple/master/images/tn.png)
 ![Content](https://raw.githubusercontent.com/aos/temple/master/images/screenshot.png)
+![Dark Mode](https://raw.githubusercontent.com/aos/temple/master/images/dm.png)
 
 [Screenshot of theme responsiveness can be found here.](https://raw.githubusercontent.com/aos/temple/master/images/responsive.png)
 
@@ -25,6 +22,7 @@ A live version of this theme can be found
 The main features of this theme include:
 * Page load speed optimizations (scores 99/100 on PageSpeed)
 * Syntax highlighting with `chroma`
+* Dark mode
 * No JavaScript
 * Multiple categories as navigation tabs
 * Tags and categories have their own pages
@@ -71,6 +69,12 @@ pygmentsCodeFences = true
   # For reference to date and time templating, see:
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateformatpretty = "2006-01-02"
+
+  # Enables dark mode
+  # Note that your syntax highlighting should be changed accordingly. If you
+  # choose a syntax-highlighting that with a white-background it won't appear
+  # correctly. See https://github.com/aos/temple/pull/35
+  darkmode = true
 
   # Enable table of contents, this can be overridden by page level parameter `toc`.
   toc = true

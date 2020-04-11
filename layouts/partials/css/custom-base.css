@@ -1,16 +1,3 @@
-:root {
-  --color: #484848;
-  --color-footnote: #575757;
-  --color-footer-content: #bbb;
-  --background-color: rgb(252, 252, 252);
-  --background-color-code: rgb(240, 240, 240);
-  --background-color-toggle-content: rgb(249, 249, 249);
-  --link-color: #c05b4d;
-  --link-color-hover: #a5473a;
-  --list-link-color: #369;
-  --border-navbar-and-footer: #e3e3e3;
-}
-
 html {
   min-height: 100%;
   width: 100%;
@@ -28,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-code, kbd, pre, samp {
+kbd, pre, samp {
   background-color: rgb(240, 240, 240);
   background-color: var(--background-color-code);
 }
@@ -45,6 +32,10 @@ code, kbd, pre, samp {
 .pure-menu-heading {
   text-transform: none;
   font-size: large;
+}
+
+.pure-menu-link:hover {
+  background-color: unset;
 }
 
 .header {

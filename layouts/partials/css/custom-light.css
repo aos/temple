@@ -1,0 +1,13 @@
+/* Light mode -- this is the default! */
+:root {
+  --color: #484848;
+  --color-footnote: #575757;
+  --color-footer-content: #bbb;
+  --background-color: rgb(252, 252, 252);
+  --background-color-code: rgb(240, 240, 240);
+  --background-color-toggle-content: rgb(249, 249, 249);
+  --link-color: #c05b4d;
+  --link-color-hover: #a5473a;
+  --list-link-color: #336699;
+  --border-navbar-and-footer: #e3e3e3;
+}
