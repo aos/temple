@@ -40,7 +40,15 @@
 
   <!-- Custom CSS -->
   <style type="text/css" media="screen">
-    {{ partial "css/custom.css" . | safeCSS }}
+    {{ if isset .Site.Params "darkmode" }}
+      {{ partial "css/custom-dark.css" . | safeCSS }}
+    {{ else }}
+      {{ partial "css/custom-light.css" . | safeCSS }}
+    {{ end }}
+  </style>
+
+  <style type="text/css" media="screen">
+    {{ partial "css/custom-base.css" . | safeCSS }}
   </style>
 
   <!-- Icon -->
@@ -56,8 +64,6 @@
   {{ if .RSSLink }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" />
   {{ end }}
-
-  {{ hugo.Generator }}
 
   <!-- User custom head -->
   {{ partial "custom_head.html" . }}

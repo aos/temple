@@ -1,0 +1,13 @@
+/* Dark mode */
+:root {
+  --color: #d8d8d8;
+  --color-footnote: rgb(255,255,255,0.8);
+  --color-footer-content: #bbb;
+  --background-color: #121212;
+  --background-color-code: rgb(30, 30, 30);
+  --background-color-toggle-content: #121212;
+  --link-color: #2bc1d5;
+  --link-color-hover: #2bc1d5;
+  --list-link-color: #2bc1d5;
+  --border-navbar-and-footer: #e3e3e3;
+}
