@@ -11,3 +11,21 @@
   --list-link-color: #2bc1d5;
   --border-navbar-and-footer: #e3e3e3;
 }
+
+.pure-table {
+  border: 1px solid rgb(63, 68, 71) !important;
+  color: rgb(187, 181, 172);
+}
+
+.pure-table td, .pure-table th {
+  border-left: 1px solid rgb(63, 68, 71) !important;
+}
+
+.pure-table thead {
+  color: rgb(232, 230, 227);
+  background-color: rgb(50, 50, 50);
+}
+
+.pure-table-striped tr:nth-child(2n-1) td {
+  background-color: rgb(31, 34, 35);
+}
