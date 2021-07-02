@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-kbd, pre, samp {
+kbd, pre, code, samp {
   background-color: rgb(240, 240, 240);
   background-color: var(--background-color-code);
 }
