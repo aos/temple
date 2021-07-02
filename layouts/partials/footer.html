@@ -34,8 +34,8 @@
 
         </ul>
         <a href="#" class="pure-menu-link pull-right" id="gototop-btn">↑↑</a>
-        {{ if .RSSLink }}
-        <a href="{{ .RSSLink }}" class="pure-menu-link pull-right">RSS</a>
+        {{ with .OutputFormats.Get "RSS" }}
+        <a href="{{ .RelPermalink }}" class="pure-menu-link pull-right">RSS</a>
         {{ end }}
       </div>
       {{ if .Site.Copyright }}
