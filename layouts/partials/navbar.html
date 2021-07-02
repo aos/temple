@@ -8,7 +8,7 @@
 				{{ if eq .Site.Params.topmenu "categories" }}
                 {{ range $name,$page := .Site.Taxonomies.categories }}
                 <li class="pure-menu-item">
-                    <a href="{{ $baseurl }}categories/{{ $name | urlize }}" class="pure-menu-link">{{ $name | title }}</a>
+                    <a href="{{ $page.Page.Permalink }}" class="pure-menu-link">{{ $page.Page.Title }}</a>
                 </li>
                 {{ end }}
 				{{ end }}
@@ -25,7 +25,7 @@
 				{{ if eq .Site.Params.topmenu "categories" }}
                 {{ range $name,$page := .Site.Taxonomies.categories }}
                 <li class="pure-menu-item">
-                    <a href="{{ $baseurl }}categories/{{ $name | urlize }}" class="pure-menu-link">{{ $name | title }}</a>
+                    <a href="{{ $page.Page.Permalink }}" class="pure-menu-link">{{ $page.Page.Title }}</a>
                 </li>
                 {{ end }}
 				{{ end }}

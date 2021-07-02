@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-kbd, pre, samp {
+kbd, pre, code, samp {
   background-color: rgb(240, 240, 240);
   background-color: var(--background-color-code);
 }
@@ -249,7 +249,7 @@ kbd, pre, samp {
 
 .post-title {
   margin-top: 0;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .post-title h1 {
