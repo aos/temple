@@ -29,6 +29,7 @@ The main features of this theme include:
 * Footer with variable social links and RSS
 * Google analytics option
 * Table of contents
+* Custom date/time format
 
 ## Getting Started
 If you have not already created a blog, I recommend you check out my [getting started guide](https://aos.github.io/2017/11/23/practical-guide-to-setting-up-a-hugo-blog/) for a comprehensive overview. Otherwise,
@@ -72,12 +73,15 @@ pygmentsCodeFences = true
 
   # Enables dark mode
   # Note that your syntax highlighting should be changed accordingly. If you
-  # choose a syntax-highlighting that with a white-background it won't appear
+  # choose a syntax-highlighting with a white-background it won't appear
   # correctly. See https://github.com/aos/temple/pull/35
   darkmode = true
 
   # Enable table of contents, this can be overridden by page level parameter `toc`.
   toc = true
+
+  # Location of favicon.ico in the "static/" directory
+  favicon_location = "favicon.ico" # This assumes it's in static/favicon.ico
 
 # Builds a list page for each category given
 [taxonomies]
@@ -102,7 +106,7 @@ $ hugo new about
 ## Contributing
 Contributions are welcome.
 
-**Features**:  
+**Features**:
 If you are adding a feature, fork the repository, create a new branch
 for your feature and submit a PR. Please make sure to put documentation for your
 new feature:
@@ -111,7 +115,7 @@ new feature:
   the example `config` in [README](README.md) as well as the
   [config.toml](exampleSite/config.toml).
 
-**Issues/Bugs**:  
+**Issues/Bugs**:
 Submit a new issue with information about your issue and/or bug. If you
 have a solution, then submit a new PR with the guidelines posted above in the
 **features** section and link your issue to it using the keyword "[*closes*](https://help.github.com/articles/closing-issues-using-keywords/)".

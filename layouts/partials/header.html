@@ -55,6 +55,8 @@
   <link rel="shortcut icon" 
   {{ if .Site.Params.faviconfile }}
     href="{{ .Site.Params.faviconfile | absURL }}" 
+  {{ else if isset .Site.Params "favicon_location" }}
+    href="{{ .Site.BaseURL }}{{ .Site.Params.favicon_location }}"
   {{ else }} 
     href="{{ .Site.BaseURL }}img/favicon.ico"
   {{ end }}

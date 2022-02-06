@@ -2,7 +2,7 @@ baseURL = "https://example.com/"
 title = "Temple"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
-copyright = "(c) 2017 - 2018 Aos Dabbagh -- All rights reserved."
+copyright = "(c) 2017 - 2022 Aos Dabbagh"
 
 # Enables Chroma-based syntax highlighting with theme "friendly"
 # See https://xyproto.github.io/splash/docs/ for other theme options
