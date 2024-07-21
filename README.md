@@ -3,7 +3,7 @@
 A Hugo theme focused on content, cleanliness, speed and responsiveness. The main
 goal of this theme is to be simple and fast.
 
-A live version of this theme can be found [on my personal blog](https://aos.github.io).
+A live version of this theme can be found [on my personal blog](https://blog.aos.sh).
 
 ![Main List](https://raw.githubusercontent.com/aos/temple/master/images/tn.png)
 ![Content](https://raw.githubusercontent.com/aos/temple/master/images/screenshot.png)
@@ -32,7 +32,7 @@ The main features of this theme include:
 * Custom date/time format
 
 ## Getting Started
-If you have not already created a blog, I recommend you check out my [getting started guide](https://aos.github.io/2017/11/23/practical-guide-to-setting-up-a-hugo-blog/) for a comprehensive overview. Otherwise,
+If you have not already created a blog, I recommend you check out my [getting started guide](https://blog.aos.sh/2017/11/23/practical-guide-to-setting-up-a-hugo-blog/) for a comprehensive overview. Otherwise,
 just download it or clone it into your `themes/` directory:
 ```
 $ cd themes && git clone https://github.com/aos/temple.git
@@ -49,7 +49,7 @@ $ hugo -t temple
 ## Customizing
 Your `config` file will hold all your options:
 ```toml
-baseURL = "https://aos.github.io/"
+baseURL = "https://blog.aos.sh/"
 title = "Your Blog Title"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
@@ -112,8 +112,8 @@ for your feature and submit a PR. Please make sure to put documentation for your
 new feature:
 - Place a small comment about what your feature is doing above the code.
 - If making additions that will affect the `config` file, make sure you update
-  the example `config` in [README](README.md) as well as the
-  [config.toml](exampleSite/config.toml).
+  the example `config` in [README](./README.md) as well as the
+  [config.toml](./exampleSite/config.toml).
 
 **Issues/Bugs**:
 Submit a new issue with information about your issue and/or bug. If you
@@ -121,4 +121,4 @@ have a solution, then submit a new PR with the guidelines posted above in the
 **features** section and link your issue to it using the keyword "[*closes*](https://help.github.com/articles/closing-issues-using-keywords/)".
 
 ## License
-MIT License. See the [LICENSE](LICENSE).
+MIT License. See the [LICENSE](./LICENSE).
