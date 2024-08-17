@@ -3,32 +3,37 @@
     <div class="pure-u-11-12 pure-u-md-7-12">
         <div class="desktop pure-menu pure-menu-horizontal nav-menu">
             {{ $baseurl := .Site.BaseURL }}
-            <a href="{{$baseurl}}" class="site-title pure-menu-heading">{{ .Site.Title }}</a>
+            <a href="{{ $baseurl }}" class="site-title pure-menu-heading">{{ .Site.Title }}</a>
             <ul class="pure-menu-list pull-right">
-				{{ if eq .Site.Params.topmenu "categories" }}
-                {{ range $name,$page := .Site.Taxonomies.categories }}
+	        {{ if eq .Site.Params.topmenu "categories" }}
+                    {{ range $name,$page := .Site.Taxonomies.categories }}
                 <li class="pure-menu-item">
                     <a href="{{ $page.Page.Permalink }}" class="pure-menu-link">{{ $page.Page.Title }}</a>
                 </li>
+                    {{ end }}
+		{{ end }}
+                {{ if fileExists "now.md" }}
+                <li class="pure-menu-item">
+                    <a href="{{ $baseurl }}now/" class="pure-menu-link">Now</a>
+                </li>
                 {{ end }}
-				{{ end }}
                 <li class="pure-menu-item">
                     <a href="{{ $baseurl }}about/" class="pure-menu-link">About</a>
                 </li>
             </ul>
         </div>
         <div class="mobile pure-menu nav-menu">
-            <a href="{{$baseurl}}" class="site-title pure-menu-heading" id="toggle-home">{{ .Site.Title }}</a>
+            <a href="{{ $baseurl }}" class="site-title pure-menu-heading" id="toggle-home">{{ .Site.Title }}</a>
             <a href="#" id="toggle-btn">&#9776;</a>
             <ul class="pure-menu-list" id="toggle-content" style="display:none;">
                 {{ $baseurl := .Site.BaseURL }}
-				{{ if eq .Site.Params.topmenu "categories" }}
-                {{ range $name,$page := .Site.Taxonomies.categories }}
+		{{ if eq .Site.Params.topmenu "categories" }}
+                    {{ range $name,$page := .Site.Taxonomies.categories }}
                 <li class="pure-menu-item">
                     <a href="{{ $page.Page.Permalink }}" class="pure-menu-link">{{ $page.Page.Title }}</a>
                 </li>
-                {{ end }}
-				{{ end }}
+                    {{ end }}
+		{{ end }}
                 <li class="pure-menu-item">
                     <a href="{{ .Site.BaseURL }}about" class="pure-menu-link">About</a>
                 </li>
