@@ -34,6 +34,11 @@
                 </li>
                     {{ end }}
 		{{ end }}
+                {{ if fileExists "now.md" }}
+                <li class="pure-menu-item">
+                    <a href="{{ $baseurl }}now/" class="pure-menu-link">Now</a>
+                </li>
+                {{ end }}
                 <li class="pure-menu-item">
                     <a href="{{ .Site.BaseURL }}about" class="pure-menu-link">About</a>
                 </li>
