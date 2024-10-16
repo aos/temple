@@ -88,7 +88,7 @@ pygmentsCodeFences = true
   tag = "tags"
   category = "categories"
 
-[author]
+[params.author]
   name = "Aos Dabbagh"
   github = "aos"
   email = "your@email.com"

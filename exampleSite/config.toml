@@ -20,7 +20,7 @@ pygmentsCodeFences = true
   tag = "tags"
   category = "categories"
 
-[author]
+[params.author]
   name = "Temple Theme"
   github = "github"
   email = "your@email.com"
