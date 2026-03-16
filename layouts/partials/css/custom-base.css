@@ -159,9 +159,21 @@ kbd, pre, code, samp {
 
 /* https://github.com/gohugoio/hugo/issues/1778#issuecomment-451552602 */
 #TableOfContents > ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+#TableOfContents ul {
+  list-style: none;
+  counter-reset: item;
+}
+
+#TableOfContents li {
+  counter-increment: item;
+}
+
+#TableOfContents li::before {
+  content: counters(item, ".") ". ";
 }
 
 #gototop-btn {
@@ -225,26 +237,56 @@ kbd, pre, code, samp {
 
 .post h1 {
   font-size: 28px;
+  counter-reset: h2;
+}
+
+.post h2::before {
+  content: counter(h2) ". ";
 }
 
 .post h2 {
   font-size: 25px;
+  counter-increment: h2;
+  counter-reset: h3;
+}
+
+.post h3::before {
+  content: counter(h2) "." counter(h3) ". ";
 }
 
 .post h3 {
   font-size: 23px;
+  counter-increment: h3;
+  counter-reset: h4;
+}
+
+.post h4::before {
+  content: counter(h2) "." counter(h3) "." counter(h4) ". ";
 }
 
 .post h4 {
   font-size: 21px;
+  counter-increment: h4;
+  counter-reset: h5;
+}
+
+.post h5::before {
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
 }
 
 .post h5 {
   font-size: 19px;
+  counter-increment: h5;
+  counter-reset: h6;
+}
+
+.post h6::before {
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". ";
 }
 
 .post h6 {
   font-size: 18px;
+  counter-increment: h6;
 }
 
 .post-title {
@@ -298,5 +340,11 @@ kbd, pre, code, samp {
 
   .desktop {
     display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    filter: invert(1) hue-rotate(180deg);
   }
 }
